@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7DCCD8B1D27EC3A00CD2F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCCD8A1D27EC3A00CD2F1E /* AppDelegate.swift */; };
+		B7DCCD8D1D27EC3A00CD2F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DCCD8C1D27EC3A00CD2F1E /* Assets.xcassets */; };
+		B7DCCD901D27EC3A00CD2F1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DCCD8E1D27EC3A00CD2F1E /* MainMenu.xib */; };
+		B7DCCD9B1D27EC3A00CD2F1E /* SemanaBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCCD9A1D27EC3A00CD2F1E /* SemanaBarTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7DCCD971D27EC3A00CD2F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DCCD7F1D27EC3A00CD2F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7DCCD861D27EC3A00CD2F1E;
+			remoteInfo = SemanaBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7DCCD871D27EC3A00CD2F1E /* SemanaBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SemanaBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DCCD8A1D27EC3A00CD2F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7DCCD8C1D27EC3A00CD2F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7DCCD8F1D27EC3A00CD2F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B7DCCD911D27EC3A00CD2F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DCCD961D27EC3A00CD2F1E /* SemanaBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SemanaBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DCCD9A1D27EC3A00CD2F1E /* SemanaBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanaBarTests.swift; sourceTree = "<group>"; };
+		B7DCCD9C1D27EC3A00CD2F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7DCCD841D27EC3A00CD2F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DCCD931D27EC3A00CD2F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7DCCD7E1D27EC3A00CD2F1E = {
+			isa = PBXGroup;
+			children = (
+				B7DCCD891D27EC3A00CD2F1E /* SemanaBar */,
+				B7DCCD991D27EC3A00CD2F1E /* SemanaBarTests */,
+				B7DCCD881D27EC3A00CD2F1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7DCCD881D27EC3A00CD2F1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCCD871D27EC3A00CD2F1E /* SemanaBar.app */,
+				B7DCCD961D27EC3A00CD2F1E /* SemanaBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7DCCD891D27EC3A00CD2F1E /* SemanaBar */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCCD8A1D27EC3A00CD2F1E /* AppDelegate.swift */,
+				B7DCCD8C1D27EC3A00CD2F1E /* Assets.xcassets */,
+				B7DCCD8E1D27EC3A00CD2F1E /* MainMenu.xib */,
+				B7DCCD911D27EC3A00CD2F1E /* Info.plist */,
+			);
+			path = SemanaBar;
+			sourceTree = "<group>";
+		};
+		B7DCCD991D27EC3A00CD2F1E /* SemanaBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCCD9A1D27EC3A00CD2F1E /* SemanaBarTests.swift */,
+				B7DCCD9C1D27EC3A00CD2F1E /* Info.plist */,
+			);
+			path = SemanaBarTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7DCCD861D27EC3A00CD2F1E /* SemanaBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DCCD9F1D27EC3A00CD2F1E /* Build configuration list for PBXNativeTarget "SemanaBar" */;
+			buildPhases = (
+				B7DCCD831D27EC3A00CD2F1E /* Sources */,
+				B7DCCD841D27EC3A00CD2F1E /* Frameworks */,
+				B7DCCD851D27EC3A00CD2F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SemanaBar;
+			productName = SemanaBar;
+			productReference = B7DCCD871D27EC3A00CD2F1E /* SemanaBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7DCCD951D27EC3A00CD2F1E /* SemanaBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DCCDA21D27EC3A00CD2F1E /* Build configuration list for PBXNativeTarget "SemanaBarTests" */;
+			buildPhases = (
+				B7DCCD921D27EC3A00CD2F1E /* Sources */,
+				B7DCCD931D27EC3A00CD2F1E /* Frameworks */,
+				B7DCCD941D27EC3A00CD2F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7DCCD981D27EC3A00CD2F1E /* PBXTargetDependency */,
+			);
+			name = SemanaBarTests;
+			productName = SemanaBarTests;
+			productReference = B7DCCD961D27EC3A00CD2F1E /* SemanaBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7DCCD7F1D27EC3A00CD2F1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "All The Ducks";
+				TargetAttributes = {
+					B7DCCD861D27EC3A00CD2F1E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V2363335BY;
+						DevelopmentTeamName = "Ten Kettles Inc.";
+						ProvisioningStyle = Automatic;
+					};
+					B7DCCD951D27EC3A00CD2F1E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V2363335BY;
+						DevelopmentTeamName = "Ten Kettles Inc.";
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7DCCD861D27EC3A00CD2F1E;
+					};
+				};
+			};
+			buildConfigurationList = B7DCCD821D27EC3A00CD2F1E /* Build configuration list for PBXProject "SemanaBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7DCCD7E1D27EC3A00CD2F1E;
+			productRefGroup = B7DCCD881D27EC3A00CD2F1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7DCCD861D27EC3A00CD2F1E /* SemanaBar */,
+				B7DCCD951D27EC3A00CD2F1E /* SemanaBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7DCCD851D27EC3A00CD2F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DCCD8D1D27EC3A00CD2F1E /* Assets.xcassets in Resources */,
+				B7DCCD901D27EC3A00CD2F1E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DCCD941D27EC3A00CD2F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7DCCD831D27EC3A00CD2F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DCCD8B1D27EC3A00CD2F1E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DCCD921D27EC3A00CD2F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DCCD9B1D27EC3A00CD2F1E /* SemanaBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7DCCD981D27EC3A00CD2F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7DCCD861D27EC3A00CD2F1E /* SemanaBar */;
+			targetProxy = B7DCCD971D27EC3A00CD2F1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7DCCD8E1D27EC3A00CD2F1E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DCCD8F1D27EC3A00CD2F1E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7DCCD9D1D27EC3A00CD2F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7DCCD9E1D27EC3A00CD2F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		B7DCCDA01D27EC3A00CD2F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SemanaBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltheducks.SemanaBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B7DCCDA11D27EC3A00CD2F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SemanaBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltheducks.SemanaBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B7DCCDA31D27EC3A00CD2F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SemanaBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltheducks.SemanaBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SemanaBar.app/Contents/MacOS/SemanaBar";
+			};
+			name = Debug;
+		};
+		B7DCCDA41D27EC3A00CD2F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SemanaBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alltheducks.SemanaBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SemanaBar.app/Contents/MacOS/SemanaBar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7DCCD821D27EC3A00CD2F1E /* Build configuration list for PBXProject "SemanaBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DCCD9D1D27EC3A00CD2F1E /* Debug */,
+				B7DCCD9E1D27EC3A00CD2F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DCCD9F1D27EC3A00CD2F1E /* Build configuration list for PBXNativeTarget "SemanaBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DCCDA01D27EC3A00CD2F1E /* Debug */,
+				B7DCCDA11D27EC3A00CD2F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B7DCCDA21D27EC3A00CD2F1E /* Build configuration list for PBXNativeTarget "SemanaBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DCCDA31D27EC3A00CD2F1E /* Debug */,
+				B7DCCDA41D27EC3A00CD2F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7DCCD7F1D27EC3A00CD2F1E /* Project object */;
+}
