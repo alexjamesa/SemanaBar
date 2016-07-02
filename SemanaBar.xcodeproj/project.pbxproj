@@ -10,7 +10,9 @@
 		B7DCCD8B1D27EC3A00CD2F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCCD8A1D27EC3A00CD2F1E /* AppDelegate.swift */; };
 		B7DCCD8D1D27EC3A00CD2F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DCCD8C1D27EC3A00CD2F1E /* Assets.xcassets */; };
 		B7DCCD901D27EC3A00CD2F1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DCCD8E1D27EC3A00CD2F1E /* MainMenu.xib */; };
-		B7DCCD9B1D27EC3A00CD2F1E /* SemanaBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCCD9A1D27EC3A00CD2F1E /* SemanaBarTests.swift */; };
+		B7DCCDA81D27F03100CD2F1E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCCDA71D27F03100CD2F1E /* ViewModel.swift */; };
+		B7DCCDAA1D27F50900CD2F1E /* WeekCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCCDA91D27F50900CD2F1E /* WeekCalculator.swift */; };
+		B7DCCDAC1D27F51600CD2F1E /* WeekCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCCDAB1D27F51600CD2F1E /* WeekCalculatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +32,10 @@
 		B7DCCD8F1D27EC3A00CD2F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B7DCCD911D27EC3A00CD2F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7DCCD961D27EC3A00CD2F1E /* SemanaBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SemanaBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7DCCD9A1D27EC3A00CD2F1E /* SemanaBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanaBarTests.swift; sourceTree = "<group>"; };
 		B7DCCD9C1D27EC3A00CD2F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7DCCDA71D27F03100CD2F1E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B7DCCDA91D27F50900CD2F1E /* WeekCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCalculator.swift; sourceTree = "<group>"; };
+		B7DCCDAB1D27F51600CD2F1E /* WeekCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				B7DCCD8A1D27EC3A00CD2F1E /* AppDelegate.swift */,
+				B7DCCDA71D27F03100CD2F1E /* ViewModel.swift */,
+				B7DCCDA91D27F50900CD2F1E /* WeekCalculator.swift */,
 				B7DCCD8C1D27EC3A00CD2F1E /* Assets.xcassets */,
 				B7DCCD8E1D27EC3A00CD2F1E /* MainMenu.xib */,
 				B7DCCD911D27EC3A00CD2F1E /* Info.plist */,
@@ -84,7 +90,7 @@
 		B7DCCD991D27EC3A00CD2F1E /* SemanaBarTests */ = {
 			isa = PBXGroup;
 			children = (
-				B7DCCD9A1D27EC3A00CD2F1E /* SemanaBarTests.swift */,
+				B7DCCDAB1D27F51600CD2F1E /* WeekCalculatorTests.swift */,
 				B7DCCD9C1D27EC3A00CD2F1E /* Info.plist */,
 			);
 			path = SemanaBarTests;
@@ -99,7 +105,9 @@
 			buildPhases = (
 				B7DCCD831D27EC3A00CD2F1E /* Sources */,
 				B7DCCD841D27EC3A00CD2F1E /* Frameworks */,
+				B7DCCDA51D27EC6F00CD2F1E /* ShellScript */,
 				B7DCCD851D27EC3A00CD2F1E /* Resources */,
+				B7DCCDA61D27ECBB00CD2F1E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -191,11 +199,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B7DCCDA51D27EC6F00CD2F1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+		B7DCCDA61D27ECBB00CD2F1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO|TEMP|FIXME|\\?\\?\\?:|\\!\\!\\!:\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | \\\nxargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | \\\nperl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B7DCCD831D27EC3A00CD2F1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DCCDAA1D27F50900CD2F1E /* WeekCalculator.swift in Sources */,
+				B7DCCDA81D27F03100CD2F1E /* ViewModel.swift in Sources */,
 				B7DCCD8B1D27EC3A00CD2F1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DCCD9B1D27EC3A00CD2F1E /* SemanaBarTests.swift in Sources */,
+				B7DCCDAC1D27F51600CD2F1E /* WeekCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +428,7 @@
 				B7DCCDA11D27EC3A00CD2F1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7DCCDA21D27EC3A00CD2F1E /* Build configuration list for PBXNativeTarget "SemanaBarTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +437,7 @@
 				B7DCCDA41D27EC3A00CD2F1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
